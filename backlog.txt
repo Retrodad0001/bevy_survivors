@@ -1,0 +1,58 @@
+BACKLOG
+
+WAIT UPSTREAM
+//BUG Panic when using WindowMode::Fullscreen with examples/2d/pixel_perfect.rs https://github.com/bevyengine/bevy/issues/9978
+//BUG Repeating rendering error in debug console but rendering works. https://github.com/bevyengine/bevy/issues/9975
+- Use ZED editor when stable on window os
+- Frame rate limiting (set max fps) https://github.com/bevyengine/bevy/issues/1343
+
+-------------------------- 0.9.0
+
+V basic setup tooling
+    V setup vs code for RUST
+    V setup readme (and picture)
+    V setup text repo and repo rules
+    V setup run script
+    V show complete texture atlas, camera and window
+    V add basic bevy-egui example to test integration
+
+V basic screen setup and camera
+    V correct resolution
+    V basic camera setup like zoom level
+    V show the whole atlas
+    
+- add debug information
+    - enable / disable with F12
+    - show camera position and zoom
+
+- basic setup scene and state management
+
+- can move player and spawn the all monster types once 
+    - setup rest asset stuff
+    - setup entity management
+    - player input
+    - setup smooth moving player and monster (just walk down for now)
+    - show debug overlay stuff
+   
+- camera follows (smooth) the player
+     
+- setup animation
+     - show current animation state per actor
+
+- ....
+
+- setup release
+    - setup windows stuff : title, icon, ...
+    - windows (desktop)
+    - mac (desktop)
+    - linux (desktop)
+    - ...
+
+
+-------------------------- 1.0.0
+....
+
+
+
+-------------------------- LATER
+....

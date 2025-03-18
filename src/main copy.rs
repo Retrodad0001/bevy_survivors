@@ -17,24 +17,24 @@ mod constants;
 fn main() {
     let mut app = App::new();
 
-    // RESOURCES
-    app.insert_resource(ClearColor(Color::srgb(0.0, 0.0, 0.0))); // Corrected typo in color value comment
+    //RESOURCES
+    app.insert_resource(ClearColor(Color::srgb(0.0, 0.0, 0.00)));
 
-    // PLUGINS
+    //PLUGINS
     app.add_plugins(FrameTimeDiagnosticsPlugin);
     app.add_plugins(PerfUiPlugin);
     app.add_plugins(
         DefaultPlugins
             .set(RenderPlugin {
                 render_creation: RenderCreation::Automatic(WgpuSettings {
-                    // BUG: (Repeating rendering error in debug console workaround) | wait for upstream Bevy fix
+                    //BUG: (Repeating rendering error in debug console work-around) | wait upstream bevy
                     backends: Some(Backends::VULKAN),
                     ..default()
                 }),
                 ..default()
             })
             .set(
-                // Here we configure the main window
+                // here we configure the main window
                 WindowPlugin {
                     primary_window: Some(Window {
                         resolution: WindowResolution::new(1920.0, 1080.0),
@@ -44,11 +44,11 @@ fn main() {
                     ..Default::default()
                 },
             )
-            .set(ImagePlugin::default_nearest()), // Pixel rendering
+            .set(ImagePlugin::default_nearest()), //Pixel rendering
     );
     app.add_plugins(EguiPlugin);
 
-    // SYSTEMS
+    //SYSTEMS
     app.add_systems(Startup, (setup_assets, setup_camera, setup_scene).chain());
     app.add_systems(Update, (show_developer_overlay, camera_update));
 
@@ -97,8 +97,7 @@ fn camera_update(mut query_camera: Query<&mut OrthographicProjection, With<MyCam
     projection.scale = 0.2;
 }
 
-// TODO: Use later
-// fn update_follow_camera(
+//TODO use later fn update_follow_camera(
 //     mut camera: Query<&mut Transform, (With<Camera2d>, Without<Player>)>,
 //     player: Query<&Transform, (With<Player>, Without<Camera2d>)>,
 //     time: Res<Time>,

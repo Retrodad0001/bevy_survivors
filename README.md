@@ -13,6 +13,7 @@ Learning the Rust language and the Bevy framework by building a 2D survivors gam
 
 Graphics were created by: https://0x72.itch.io/ (0x72) - 16x16 DungeonTileset II
 
+![0x72_DungeonTilesetII_v1 7](https://github.com/user-attachments/assets/86d4b854-dd80-4829-928c-aa4c15c2478e)
 
 # Learning Resources
 

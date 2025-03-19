@@ -1,12 +1,12 @@
 BACKLOG
 
 WAIT UPSTREAM
-//BUG Panic when using WindowMode::Fullscreen with examples/2d/pixel_perfect.rs https://github.com/bevyengine/bevy/issues/9978
-//BUG Repeating rendering error in debug console but rendering works. https://github.com/bevyengine/bevy/issues/9975
+//BUG Panic using WindowMode::Fullscreen https://github.com/bevyengine/bevy/issues/9978
+//BUG Repeating rendering error in debug https://github.com/bevyengine/bevy/issues/9975
 - Use ZED editor when stable on window os
 - Frame rate limiting (set max fps) https://github.com/bevyengine/bevy/issues/1343
 
--------------------------- 0.9.0
+-------------------------- 0.1.0
 
 V basic setup tooling
     V setup vs code for RUST
@@ -21,9 +21,18 @@ V basic screen setup and camera
     V basic camera setup like zoom level
     V show the whole atlas
     
-- add debug information
-    - enable / disable with F12
-    - show camera position and zoom
+V add info to repo
+    V add picture in readme
+    V add github extra tags, text and add these issues to github
+ 
+- setup CI build and pull request rules
+
+- remove backlog.txt and replace it with issues
+
+- add basic debug info
+    - debug : enable / disable with F12
+    - debug : show camera position and zoom
+    - debug : update to bevy 0.16.x (and the rest of the crates when needed)
 
 - basic setup scene and state management
 
@@ -41,8 +50,11 @@ V basic screen setup and camera
 
 - ....
 
+-------------------------- 0.9.0 Testing and make release ready
+
 - setup release
     - setup windows stuff : title, icon, ...
+    - add github actions
     - windows (desktop)
     - mac (desktop)
     - linux (desktop)

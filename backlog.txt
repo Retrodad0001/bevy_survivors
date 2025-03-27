@@ -1,0 +1,72 @@
+BACKLOG
+
+WAIT UPSTREAM
+//BUG Panic using WindowMode::Fullscreen https://github.com/bevyengine/bevy/issues/9978
+//BUG Repeating rendering error in debug https://github.com/bevyengine/bevy/issues/9975
+- Use ZED editor when stable on Windows OS
+- Frame rate limiting (set max FPS) https://github.com/bevyengine/bevy/issues/1343
+
+-------------------------- 0.1.0
+
+V basic setup tooling
+    V setup VS Code for RUST
+    V setup README (and picture)
+    V setup text repo and repo rules
+    V setup run script
+    V show complete texture atlas, camera, and window
+    V add basic bevy-egui example to test integration
+
+V basic screen setup and camera
+    V correct resolution
+    V basic camera setup like zoom level
+    V show the whole atlas
+    
+V add info to repo
+    //TODO add picture in README
+    V add GitHub extra tags, text, and add these issues to GitHub
+ 
+//TODO - setup CI build and pull request rules
+    //TODO - setup security build
+    //TODO - setup debug CI build
+    //TODO - setup repo rules
+
+- add basic debug info
+    - debug: enable/disable with F12
+    - debug: show camera position and zoom
+    - debug: update to bevy 0.16.x (and the rest of the crates when needed)
+    - update to bevy 0.16.x and also the related packages
+
+- basic setup scene and state management
+
+- can move player and spawn all monster types once 
+    - setup rest asset stuff
+    - setup entity management
+    - player input
+    - setup smooth moving player and monster (just walk down for now)
+    - show debug overlay stuff
+   
+- camera follows (smooth) the player
+     
+- setup animation
+     - show current animation state per actor
+
+- ....
+
+-------------------------- 0.9.0 Testing and make release ready
+
+- setup release
+    - setup windows stuff: title, icon, ...
+    - add GitHub actions
+    - windows (desktop)
+    - mac (desktop)
+    - linux (desktop)
+    - ...
+
+
+-------------------------- 1.0.0
+....
+
+
+
+-------------------------- LATER
+....

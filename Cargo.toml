@@ -1,0 +1,30 @@
+[package]
+name = "bevy_survivors"
+version = "0.1.0"
+edition = "2024"
+authors = ["Retrodad0001"]
+description = "2D survivors game in Rust using Bevy for learning and sharing with the community"
+readme = "README.md"
+license = "MIT"
+keywords = ["gamedev", "graphics", "Rust", "Bevy", "2D", "game", "survivors", "learning", "community"]
+
+[lints.clippy]
+panic = "warn"
+unwrap_used = "warn"
+expect_used = "warn"
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.dev]
+opt-level = 3 #debugging is a pain and will cost extra time, so realtime logging while play testing and internal automatic testing is the way to go
+
+[profile.release]#max performance settings for release version
+opt-level = 3
+codegen-units = 1
+incremental = false
+debug = false
+
+[dependencies]
+bevy = "0.15.*"
+bevy_egui = "0.33.*"
